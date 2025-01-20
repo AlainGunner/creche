@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Stars Daycare</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf8f4;
+            color: #444;
+        }
+        .navbar {
+            background-color: #ffcccb;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar img {
+            max-height: 100px;
+            margin-right: 150px;
+        }
+        .navbar h1 {
+            font-size: 24px;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .navbar-links {
+            display: flex;
+            align-items: center;
+        }
+        .welcome {
+            padding: 20px;
+            text-align: center;
+            background-color: #ffe4e1;
+        }
+        .activity-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .activity {
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+        .activity a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100%;
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+            text-decoration: none;
+            z-index: 1;
+            position: relative;
+        }
+        .activity a:hover {
+            text-decoration: underline;
+        }
+        .activity::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        section {
+            padding: 20px;
+        }
+        section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        #contact-form input, #contact-form textarea, #contact-form button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        #contact-form button {
+            background-color: #ffcccb;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        #contact-form button:hover {
+            background-color: #ffa07a;
+        }
+        footer {
+            background-color: #ffcccb;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-title">
+            <img src="./rainbow bohemian logo (2).png" alt="Little Stars Daycare Logo">
+        </div>
+        <div class="navbar-links">
+            <a href="#welcome">Home</a>
+            <a href="#activities">Activities</a>
+            <a href="#events">Events</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+    <div class="welcome" id="welcome">
+        <h1>Welcome to BabyChou</h1>
+        <p>
+            At BabyChou, we provide a safe, nurturing, and stimulating environment for your child. 
+            Our mission is to foster growth, creativity, and joy through fun activities and meaningful experiences.
+        </p>
+    </div>
+    <section id="activities">
+        <h2>Our Activities</h2>
+        <div class="activity-gallery">
+            <div class="activity" style="background-image: url('./pexels-mikhail-nilov-8923027.jpg');">
+                <a href="./project.html" target="">Playtime</a>
+            </div>
+            <div class="activity" style="background-image: url('./pexels-rdne-8363102.jpg');">
+                <a href="./babyland.html" target="_blank">Arts & Crafts</a>
+            </div>
+            <div class="activity" style="background-image: url('./pexels-yankrukov-8612981.jpg');">
+                <a href="./baby.html" target="_blank">Storytelling</a>
+            </div>
+            <div class="activity" style="background-image: url('./pexels-budgeron-bach-5149628.jpg');">
+                <a href="./music.html" target="_blank">Music & Dance</a>
+            </div>
+        </div>
+    </section>
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <p style="text-align: center;">
+            Join us for special events that bring joy and learning to our little stars! 
+            Here are some highlights of what's coming up:
+        </p>
+        <table style="width: 80%; margin: 20px auto; border-collapse: collapse; text-align: left; font-size: 16px;">
+            <thead>
+                <tr style="background-color: #ffcccb; color: white;">
+                    <th style="padding: 10px; border: 1px solid #ddd;">Date</th>
+                    <th style="padding: 10px; border: 1px solid #ddd;">Event</th>
+                    <th style="padding: 10px; border: 1px solid #ddd;">Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ddd;">March 15, 2025</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Spring Festival</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">A fun-filled day with games, music, and crafts to welcome spring!</td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px; border: 1px solid #ddd;">April 10, 2025</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">Storytime with Guest</td>
+                    <td style="padding: 10px; border: 1px solid #ddd;">A special storytelling session with a surprise guest author.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="activity-gallery">
+            <div class="activity" style="background-image: url('./pexels-wildlittlethingsphoto-27175471.jpg');">
+                <a href="https://example.com/gallery1" target="_blank">Happy Moments</a>
+            </div>
+            <div class="activity" style="background-image: url('./pexels-artempodrez-6941084.jpg');">
+                <a href="https://example.com/gallery2" target="_blank">Creative Time</a>
+            </div>
+            <div class="activity" style="background-image: url('./pexels-rdne-8363569.jpg');">
+                <a href="https://example.com/gallery3" target="_blank">Learning Together</a>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 BabyChou Daycare. All rights reserved. | 
+            <a href="#contact">Contact Us</a> | 
+            <a href="#welcome">Back to Top</a>
+        </p>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storytelling at the Nursery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #fff, #e3f2fd);
+            position: relative;
+            overflow-x: hidden;
+        }
+        .navbar {
+            background-color: #64B5F6; /* Light Blue */
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #1565c0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            margin: 10px 5px;
+            background: #1E88E5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .main-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 60px;
+        }
+
+        .main-section .description {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .main-section .description h2 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .main-section .description p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .main-section .image-container {
+            flex: 1;
+            text-align: right;
+            position: relative;
+        }
+
+        .main-section .image-container img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .main-section .image-container .circle {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: rgba(30, 136, 229, 0.3);
+            filter: blur(100px);
+            top: -50px;
+            right: -100px;
+            z-index: -1;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 250px;
+            margin: 10px;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            color: #42a5f5;
+            margin: 10px 0;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+    </div>
+    <div class="container">
+        <header>
+            <h1>Storytelling at the Nursery</h1>
+            <p>Ignite imagination and foster a love for stories.</p>
+        </header>
+
+        <section class="main-section">
+            <div class="description">
+                <h2>Magical Stories for Young Minds</h2>
+                <p>Our storytelling sessions create a magical world for children to explore. With interactive narration, engaging voices, and fun props, we ensure every story sparks wonder and creativity.</p>
+                <p>Join us to see your child fall in love with the magic of storytelling.</p>
+            </div>
+            <div class="image-container">
+                <div class="circle"></div>
+                <img src="./pexels-rdne-8363102.jpg" alt="Storytelling">
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Storytime Highlights</h2>
+            <p>Favorite Storytelling Themes</p>
+
+            <div class="card-container">
+                <div class="card">
+                    <img src="./pexels-artempodrez-6941084.jpg" alt="Fairy Tales">
+                    <h3>Fairy Tales</h3>
+                    <p>Classic tales filled with wonder and moral lessons.</p>
+                </div>
+                <div class="card">
+                    <img src="./pexels-rdne-8363569.jpg" alt="Adventure Stories">
+                    <h3>Adventure Stories</h3>
+                    <p>Exciting tales of exploration and bravery.</p>
+                </div>
+                <div class="card">
+                    <img src="./pexels-mikhail-nilov-8923027.jpg" alt="Animal Tales">
+                    <h3>Animal Tales</h3>
+                    <p>Engaging stories featuring animals with fun antics.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

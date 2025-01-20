@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music & Dance at the Nursery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #fff, #ffe0b2);
+            position: relative;
+            overflow-x: hidden;
+        }
+        .navbar {
+            background-color: #FFCC80; /* Soft Orange */
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .navbar a:hover {
+            color: #e65100;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            margin: 10px 5px;
+            background: #F57C00;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .main-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 60px;
+        }
+
+        .main-section .description {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .main-section .description h2 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .main-section .description p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .main-section .image-container {
+            flex: 1;
+            text-align: right;
+            position: relative;
+        }
+
+        .main-section .image-container img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .main-section .image-container .circle {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: rgba(255, 172, 0, 0.3);
+            filter: blur(100px);
+            top: -50px;
+            right: -100px;
+            z-index: -1;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 250px;
+            margin: 10px;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            color: #FF7043;
+            margin: 10px 0;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+    </div>
+    <div class="container">
+        <header>
+            <h1>Music & Dance at the Nursery</h1>
+            <p>Encouraging rhythm, movement, and self-expression through fun activities.</p>
+        </header>
+
+        <section class="main-section">
+            <div class="description">
+                <h2>Explore Music and Movement</h2>
+                <p>Our Music & Dance sessions are a joyful way for children to explore rhythm and movement. From group sing-alongs to lively dance routines, we create an environment full of fun and creativity.</p>
+                <p>Let your child discover the magic of music and express themselves freely through dance!</p>
+            </div>
+            <div class="image-container">
+                <div class="circle"></div>
+                <img src="./ballet-3362687_1280.jpg" alt="Music & Dance">
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Highlights of Music & Dance</h2>
+            <p>Activities that Bring Joy</p>
+
+            <div class="card-container">
+                <div class="card">
+                    <img src="./pexels-budgeron-bach-5149628.jpg" alt="Group Sing-Alongs">
+                    <h3>Group Sing-Alongs</h3>
+                    <p>Fun and engaging songs for all children to enjoy.</p>
+                </div>
+                <div class="card">
+                    <img src="./ballet-3898440_1280.jpg" alt="Movement Games">
+                    <h3>Movement Games</h3>
+                    <p>Interactive games to encourage rhythm and coordination.</p>
+                </div>
+                <div class="card">
+                    <img src="./ballet-3362687_1280.jpg" alt="Dance Routines">
+                    <h3>Dance Routines</h3>
+                    <p>Lively routines that inspire confidence and expression.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
